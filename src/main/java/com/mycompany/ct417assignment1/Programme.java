@@ -2,15 +2,16 @@ package com.mycompany.ct417assignment1;
 
 import java.util.ArrayList;
 import java.util.Date;
+import org.joda.time.DateTime;
 
 /**@author 14359691 */
 public class Programme {
     private String courseName;
     private ArrayList<Module> modules;
-    private Date startDate;
-    private Date endDate;
+    private DateTime startDate;
+    private DateTime endDate;
     
-    public Programme(String courseName, ArrayList modules, Date startDate, Date endDate){
+    public Programme(String courseName, ArrayList modules, DateTime startDate, DateTime endDate){
         this.courseName = courseName;
         this.modules = modules;
         this.startDate = startDate;
@@ -30,16 +31,16 @@ public class Programme {
     public void setModules(ArrayList modules){
         this.modules = modules;
     }
-    public Date getStartDate(){
+    public DateTime getStartDate(){
         return startDate;
     }
-    public void setStartDate(Date start){
+    public void setStartDate(DateTime start){
         this.startDate = start;
     }
-    public Date getEndDate(){
+    public DateTime getEndDate(){
         return endDate;
     }
-    public void setEndDate(Date end){
+    public void setEndDate(DateTime end){
         this.endDate = end;
     }
 }
